@@ -55,8 +55,7 @@
 \SweaveOpts{concordance=TRUE} % For RStudio hiccups
 
 
-\title{Title
-Invest now, get paid/returns later? Growth strategies to cope with environmental stress and benefit from extended growing seasons in a future climate %(my favourite)
+\title{Invest now, get paid/returns later? Growth strategies to cope with environmental stress and benefit from extended growing seasons in a future climate %(my favourite)
 
 %dlDec18: Alternate title ideas:
 %Growth determinism/determinacy/habits in plants/woody perennials/trees: Limits and opportunities of species to time growth activities in a future climate. 
@@ -66,7 +65,7 @@ Invest now, get paid/returns later? Growth strategies to cope with environmental
 
 
 \date{\today}
-\author{Frederik Baumgarten$^1$ }
+\author{Frederik Baumgarten$^1$ (perhaps as single author? or with Lizzie, or potentially with Sally and Rob)}
 \maketitle 
 
 \section*{Abstract}

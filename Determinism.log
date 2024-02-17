@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.28)  17 FEB 2024 01:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.28)  17 FEB 2024 01:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -528,6 +528,11 @@ LaTeX Font Info:    Trying to load font information for T1+cmss on input line 7
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
+Overfull \hbox (82.40125pt too wide) in paragraph at lines 71--71
+ [][] 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 74--76
 
  []
@@ -634,7 +639,7 @@ sr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr
 ocal/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/loc
 al/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local
 /texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb>
-Output written on Determinism.pdf (5 pages, 118211 bytes).
+Output written on Determinism.pdf (5 pages, 120500 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream
