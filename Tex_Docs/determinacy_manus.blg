@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: determinacy_manus.aux
+The style file: apalike.bst
+Database file #1: Growth_determination.bib
+Warning--I didn't find a database entry for ""
+You've used 4 entries,
+            1935 wiz_defined-function locations,
+            502 strings with 5069 characters,
+and the built_in function-call counts, 2152 in all, are:
+= -- 193
+> -- 150
+< -- 3
++ -- 56
+- -- 56
+* -- 212
+:= -- 391
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 48
+chr.to.int$ -- 4
+cite$ -- 4
+duplicate$ -- 55
+empty$ -- 113
+format.name$ -- 62
+if$ -- 393
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 4
+newline$ -- 23
+num.names$ -- 12
+pop$ -- 39
+preamble$ -- 1
+purify$ -- 48
+quote$ -- 0
+skip$ -- 44
+stack$ -- 0
+substring$ -- 129
+swap$ -- 4
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 0
+while$ -- 14
+width$ -- 0
+write$ -- 53
+(There was 1 warning)
