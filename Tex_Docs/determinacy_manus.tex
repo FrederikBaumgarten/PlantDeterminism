@@ -47,7 +47,9 @@
 %\fancyhead[RO]{Research Proposal}
 % more optionals! %
 
-\graphicspath{ {./figures/} }% tell latex where to find photos 
+\usepackage{graphicx}
+\graphicspath{{/Users/frederik/github/PlantDeterminism/figures/}} % specify the path to your figures directory
+
 
 
 
@@ -193,10 +195,38 @@
 	which strategy leads to taller or bigger structures that are durable and live longer? this will decide over the residence time of carbon in an ecosystem.
 	\\
 	\pagebreak
-	\newpage
+
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\textwidth]{Fig_1.pdf} 
+		\caption{Schematic overview of the discrepancy between the potential growing season and the effectively realized vegetative growth. Environmental factors like temperature and soil moisture, exceeding growth-promoting thresholds can be seen as filters that narrow the window of opportunity available for vegetative growth. The species-specific life history cycle (phenology) can further impose another filter by imposing a dormancy cycle and/or prioritizing developmental processes other than structural growth (e.g. flowering, fruit maturation and storage). }
+		\label{fig:your-figure-label-xxx}
+	\end{figure}
+	
+		\pagebreak
+		
+	\begin{figure}
+		\centering
+		\includegraphics[width=1.1\textwidth]{Fig_2.jpg} 
+		\caption{Determinate and indeterminate growth within one growing season. Commonly all tree species deploy buds during their first spring flush from prebuild and overwintering leaf primordia (A-B). Determinate growing species set bud that are under hormonal suppression (paradormancy) to sustain any further activity of the shoot apical meristem (C). Indeterminate growing species continue to produce new tissue directly (D) or through one or several intermediate bud stage(s) (E). Finally all species set their bud and enter endodormancy}
+		\label{fig:your-figure-label-xxx}
+	\end{figure}
+	
+		\begin{figure}
+		\centering
+		\includegraphics[width=0.9\textwidth]{Fig_3.pdf} 
+		\caption{Determinate and indeterminate growth within one growing season. Commonly all tree species deploy buds during their first spring flush from prebuild and overwintering leaf primordia (A-B). Determinate growing species set bud that are under hormonal suppression (paradormancy) to sustain any further activity of the shoot apical meristem (C). Indeterminate growing species continue to produce new tissue directly (D) or through one or several intermediate bud stage(s) (E). Finally all species set their bud and enter endodormancy}
+		\label{fig:your-figure-label-xxx}
+	\end{figure}
+	
+	Figure \ref{fig:your-figure-label-xxx} shows an example figure.
+	
+		\newpage
 	
 	\bibliography{Growth_determination}
 	\bibliographystyle{apalike}
+	
 	
 	
 \end{document}

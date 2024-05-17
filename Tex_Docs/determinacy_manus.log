@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.28)  16 MAY 2024 10:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.28)  17 MAY 2024 11:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -450,30 +450,36 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count306
 \l__pdf_internal_box=\box60
 )
-(./determinacy_manus.aux)
+(./determinacy_manus.aux
+
+LaTeX Warning: Label `fig:your-figure-label-xxx' multiply defined.
+
+
+LaTeX Warning: Label `fig:your-figure-label-xxx' multiply defined.
+
+)
 \openout1 = `determinacy_manus.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 \c@lstlisting=\count307
-
-(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count308
 \scratchdimen=\dimen187
@@ -498,29 +504,19 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 54.
+Package hyperref Info: Link coloring OFF on input line 56.
 
 (./determinacy_manus.out) (./determinacy_manus.out)
 \@outlinefile=\write3
 \openout3 = `determinacy_manus.out'.
 
 
-Overfull \hbox (16.9187pt too wide) in paragraph at lines 69--69
+Overfull \hbox (16.9187pt too wide) in paragraph at lines 71--71
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
@@ -529,98 +525,144 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 113--118
+Underfull \hbox (badness 10000) in paragraph at lines 115--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--131
+Underfull \hbox (badness 10000) in paragraph at lines 121--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--140
+Underfull \hbox (badness 10000) in paragraph at lines 136--142
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 141--144
+Underfull \hbox (badness 10000) in paragraph at lines 143--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--150
+Underfull \hbox (badness 10000) in paragraph at lines 149--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--155
+Underfull \hbox (badness 10000) in paragraph at lines 153--157
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--161
+Underfull \hbox (badness 10000) in paragraph at lines 159--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--179
+Underfull \hbox (badness 10000) in paragraph at lines 179--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--183
+Underfull \hbox (badness 10000) in paragraph at lines 182--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--189
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
 
  []
 
-[5] [6] (./determinacy_manus.bbl) [7] (./determinacy_manus.aux)
+[5] [6]
+</Users/frederik/github/PlantDeterminism/figures//Fig_1.pdf, id=68, 522.95375pt
+ x 617.30624pt>
+File: /Users/frederik/github/PlantDeterminism/figures//Fig_1.pdf Graphic file (
+type pdf)
+<use /Users/frederik/github/PlantDeterminism/figures//Fig_1.pdf>
+Package pdftex.def Info: /Users/frederik/github/PlantDeterminism/figures//Fig_1
+.pdf  used on input line 202.
+(pdftex.def)             Requested size: 354.86403pt x 418.89612pt.
+</Users/frederik/github/PlantDeterminism/figures//Fig_2.jpg, id=69, 3754.025pt 
+x 2686.035pt>
+File: /Users/frederik/github/PlantDeterminism/figures//Fig_2.jpg Graphic file (
+type jpg)
+<use /Users/frederik/github/PlantDeterminism/figures//Fig_2.jpg>
+Package pdftex.def Info: /Users/frederik/github/PlantDeterminism/figures//Fig_2
+.jpg  used on input line 211.
+(pdftex.def)             Requested size: 487.93889pt x 349.11484pt.
+
+Overfull \hbox (44.36053pt too wide) in paragraph at lines 211--212
+ [][] 
+ []
+
+</Users/frederik/github/PlantDeterminism/figures//Fig_3.pdf, id=70, 519.9425pt 
+x 414.54875pt>
+File: /Users/frederik/github/PlantDeterminism/figures//Fig_3.pdf Graphic file (
+type pdf)
+<use /Users/frederik/github/PlantDeterminism/figures//Fig_3.pdf>
+Package pdftex.def Info: /Users/frederik/github/PlantDeterminism/figures//Fig_3
+.pdf  used on input line 218.
+(pdftex.def)             Requested size: 399.2178pt x 318.29265pt.
+[7] [8 </Users/frederik/github/PlantDeterminism/figures//Fig_1.pdf>] [9 </Users
+/frederik/github/PlantDeterminism/figures//Fig_2.jpg>] [10 </Users/frederik/git
+hub/PlantDeterminism/figures//Fig_3.pdf>] (./determinacy_manus.bbl) [11]
+(./determinacy_manus.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `determinacy_manus.out' has not changed.
-(rerunfilecheck)             Checksum: E26F23CC8CA87F32C9D8F0D7FE40B54D;105.
+(rerunfilecheck)             Checksum: BC266B5858E9939F12E1F778C5E61788;105.
  ) 
 Here is how much of TeX's memory you used:
- 14488 strings out of 476025
- 232227 string characters out of 5790017
+ 14533 strings out of 476025
+ 233813 string characters out of 5790017
  1867388 words of memory out of 5000000
- 34722 multiletter control sequences out of 15000+600000
- 518669 words of font info for 54 fonts, out of 8000000 for 9000
+ 34754 multiletter control sequences out of 15000+600000
+ 518968 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,11n,117p,1764b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -630,13 +672,14 @@ usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
 al/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/t
-exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/tex
-live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on determinacy_manus.pdf (7 pages, 150123 bytes).
+texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texl
+ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texliv
+e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on determinacy_manus.pdf (11 pages, 2017211 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
- 27 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 180 PDF objects out of 1000 (max. 8388607)
+ 130 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 24 words of extra memory for PDF output out of 10000 (max. 10000000)
 
