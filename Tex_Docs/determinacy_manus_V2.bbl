@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Ejsmond \emph{et~al.}(2010)Ejsmond, Czarno{\l}{\k e}ski, Kapustka \&
+  Koz{\l}owski}]{ejsmondHowTimeGrowth2010}
+Ejsmond, M.J., Czarno{\l}{\k e}ski, M., Kapustka, F. \& Koz{\l}owski, J.
+  (2010).
+\newblock How to {{Time Growth}} and {{Reproduction}} during the {{Vegetative
+  Season}}: {{An Evolutionary Choice}} for {{Indeterminate Growers}} in
+  {{Seasonal Environments}}.
+\newblock \emph{The American Naturalist}, 175, 551--563.
+
+\end{thebibliography}
