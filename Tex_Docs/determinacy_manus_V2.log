@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.28)  22 MAY 2024 19:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.28)  24 MAY 2024 00:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -546,16 +546,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-</Users/frederik/github/PlantDeterminism/figures//Fig_1_V3.pdf, id=24, 532.9912
-6pt x 772.8875pt>
-File: /Users/frederik/github/PlantDeterminism/figures//Fig_1_V3.pdf Graphic fil
-e (type pdf)
-<use /Users/frederik/github/PlantDeterminism/figures//Fig_1_V3.pdf>
-Package pdftex.def Info: /Users/frederik/github/PlantDeterminism/figures//Fig_1
-_V3.pdf  used on input line 120.
-(pdftex.def)             Requested size: 399.2178pt x 578.92122pt.
 
-LaTeX Warning: Float too large for page by 30.6677pt on input line 123.
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+</Users/frederik/github/PlantDeterminism/figures//Fig_1_V5.pdf, id=24, 551.0587
+5pt x 772.8875pt>
+File: /Users/frederik/github/PlantDeterminism/figures//Fig_1_V5.pdf Graphic fil
+e (type pdf)
+<use /Users/frederik/github/PlantDeterminism/figures//Fig_1_V5.pdf>
+Package pdftex.def Info: /Users/frederik/github/PlantDeterminism/figures//Fig_1
+_V5.pdf  used on input line 120.
+(pdftex.def)             Requested size: 399.2178pt x 559.9458pt.
+
+LaTeX Warning: Float too large for page by 11.69228pt on input line 123.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 127--130
@@ -563,30 +568,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--130
  []
 
 [2{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}] [3 </Users/frederik/github/PlantDeterminism/figures//Fig_1_V3.pdf>]
+}] [3 </Users/frederik/github/PlantDeterminism/figures//Fig_1_V5.pdf>]
 </Users/frederik/github/PlantDeterminism/figures//Fig_2.jpg, id=63, 3754.025pt 
 x 2686.035pt>
 File: /Users/frederik/github/PlantDeterminism/figures//Fig_2.jpg Graphic file (
 type jpg)
 <use /Users/frederik/github/PlantDeterminism/figures//Fig_2.jpg>
 Package pdftex.def Info: /Users/frederik/github/PlantDeterminism/figures//Fig_2
-.jpg  used on input line 146.
+.jpg  used on input line 145.
 (pdftex.def)             Requested size: 487.93889pt x 349.11484pt.
 
-Overfull \hbox (44.36053pt too wide) in paragraph at lines 146--147
+Overfull \hbox (44.36053pt too wide) in paragraph at lines 145--146
  [][] 
  []
 
-[4 </Users/frederik/github/PlantDeterminism/figures//Fig_2.jpg>]
-</Users/frederik/github/PlantDeterminism/figures//Fig_3_V2.pdf, id=72, 530.9837
-5pt x 415.5525pt>
-File: /Users/frederik/github/PlantDeterminism/figures//Fig_3_V2.pdf Graphic fil
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+[4] [5 </Users/frederik/github/PlantDeterminism/figures//Fig_2.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
+</Users/frederik/github/PlantDeterminism/figures//Fig_3_V3.pdf, id=80, 530.9837
+5pt x 451.6875pt>
+File: /Users/frederik/github/PlantDeterminism/figures//Fig_3_V3.pdf Graphic fil
 e (type pdf)
-<use /Users/frederik/github/PlantDeterminism/figures//Fig_3_V2.pdf>
+<use /Users/frederik/github/PlantDeterminism/figures//Fig_3_V3.pdf>
 Package pdftex.def Info: /Users/frederik/github/PlantDeterminism/figures//Fig_3
-_V2.pdf  used on input line 172.
-(pdftex.def)             Requested size: 399.2178pt x 312.43718pt.
- [5 </Users/frederik/github/PlantDeterminism/figures//Fig_3_V2.pdf>] [6]
+_V3.pdf  used on input line 180.
+(pdftex.def)             Requested size: 399.2178pt x 339.60562pt.
+</Users/frederik/github/PlantDeterminism/figures//Fig_4_V1.pdf, id=81, 346.2937
+5pt x 383.4325pt>
+File: /Users/frederik/github/PlantDeterminism/figures//Fig_4_V1.pdf Graphic fil
+e (type pdf)
+<use /Users/frederik/github/PlantDeterminism/figures//Fig_4_V1.pdf>
+Package pdftex.def Info: /Users/frederik/github/PlantDeterminism/figures//Fig_4
+_V1.pdf  used on input line 187.
+(pdftex.def)             Requested size: 399.2178pt x 442.04388pt.
+[6] [7 </Users/frederik/github/PlantDeterminism/figures//Fig_3_V3.pdf>]
+[8 </Users/frederik/github/PlantDeterminism/figures//Fig_4_V1.pdf>]
 (./determinacy_manus_V2.bbl
 
 ! LaTeX Error: Command \k unavailable in encoding OT1.
@@ -601,18 +624,18 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [7] (./determinacy_manus_V2.aux)
+) [9] (./determinacy_manus_V2.aux)
 Package rerunfilecheck Info: File `determinacy_manus_V2.out' has not changed.
-(rerunfilecheck)             Checksum: A76DD887119E9DBE84D247F103EBBC6F;105.
+(rerunfilecheck)             Checksum: C717A4E54209A72E3DB497EF7F0754AF;105.
  ) 
 Here is how much of TeX's memory you used:
- 14518 strings out of 476025
- 233334 string characters out of 5790017
+ 14531 strings out of 476025
+ 233846 string characters out of 5790017
  1868388 words of memory out of 5000000
- 34750 multiletter control sequences out of 15000+600000
+ 34759 multiletter control sequences out of 15000+600000
  519303 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,11n,117p,1032b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,11n,117p,1061b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -625,10 +648,10 @@ live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texl
 ive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texliv
 e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 /2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on determinacy_manus_V2.pdf (7 pages, 2062683 bytes).
+Output written on determinacy_manus_V2.pdf (9 pages, 2107948 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 24 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 24 named destinations out of 1000 (max. 500000)
+ 29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
