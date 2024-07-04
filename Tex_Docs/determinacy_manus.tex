@@ -18,6 +18,18 @@
 \usepackage{lineno}
 \linenumbers
 
+\usepackage[margin=2cm]{geometry}
+\usepackage[most]{tcolorbox}
+
+\newtcolorbox{mytextbox}[1][]{% specify textbox
+	sharp corners,
+	enhanced,
+	colback=white,
+	height=15cm,
+	attach title to upper,
+	#1
+}
+
 % recommended! Uncomment the below line and change the path for your computer!
 % \SweaveOpts{prefix.string=/Users/Lizzie/Documents/git/teaching/demoSweave/Fig.s/demoFig, eps=FALSE} 
 %put your Fig.s in one place! Also, note that here 'Fig.s' is the folder and 'demoFig' is what each 
@@ -142,23 +154,35 @@ While this concept is often presented as dichotomous \citep{kozlowskiGrowthContr
 								\caption{Determinate and indeterminate growth within one growing season. Commonly all tree species deploy buds during their first spring flush from prebuild and overwintering leaf primordia (A). Determinate growing species set bud (B) that are under hormonal suppression to sustain any further activity of the shoot apical meristem (paradormancy). Indeterminate growing species continue to produce new tissue directly (C) or through one (D) to several (E) intermediate bud stage(s). Finally all species set their bud (F) and enter full dormancy (endodormancy). Shoot apical meristem (SAM); Bud scale (BS); leaf primordia (LP). The basic unit of a shoot is the phytomer which is composed of a node, a leaf, the axillary bud and an internode.}
 								\label{fig:fig_2xxx}
 								\end{figure}
+%	\begin{mytextbox}[]
+	%	\subsection*{Box 1: Definitions)}
+	%	\textbf{Growth habit}: The genetic tendency of a plant to form a characteristic habitus (shape, height, form) with a particular branching and growth pattern. \\
+%		\textbf{determinate growth}: a growth pattern characterized to stop at a predefined size. Commonly, the apical bud culminates in an inflorescence, halting the production of any additional leaves or buds. In trees this terms specifies the short duration of extension growth in spring with no further activity of the apical meristem.\\
+		%\textbf{indeterminate growth}: a growth pattern characterized by continuous growth (leaves, buds or flowers) throughout their life or as long as condition remain favourable. This is possible because the apical meristems always remain vegetative and flowers are restricted to lateral meristems. In trees this refers to the continuous shoot elongation throughout the growing season.\\
+		%\textbf{Neogrowth}: Growth that occurs on top of preformed tissue due to the more or less continuous activity of the shoot apical meristem. Several forms occur depending on whether growth occurs continuously or in bursts.\\
+		%\textbf{Perpetual/Continuous/free/sustained growth}: the constant production of new tissue without interruptions of bud stages.\\
+		%\textbf{Polycyclic growth:} Growth occurs in bursts after the initiation of leaf primordia inside buds.  \\
+		%\textbf{Second flush:} Growth form of species in which one additional cohort of buds is build and deployed during the current growing season. In the German literature this is often termed ‘Johannitrieb’ since the flush often occurs around the summer solstice. Also ‘lammas growth’ is a common term for an additional flush (lammas = loaf mass; old English for the holy communion typically to celebrate the first harvest).\\
+		
+	%\end{mytextbox}
+
 	
 \section*{Control mechanisms of (in)determinacy}
 Although a century of studying growth habits has passed we still have very little understanding of when and why trees exhibit a certain degree of (in)determinacy in their growth strategy. To a large extent this is probably due to the variable environmental conditions within and between years as well as among sites and individuals that complicates the separation of internal from external factors influencing or driving primary growth and for that matter other meristematic activity.
 
-%needs to be shorten a lot!
-Indeed there is some evidence that under favorable conditions, particularly high soil moisture availability, stretching into the growing season prolongs the period of shoot elongation or permitting a second flush, also known as `lammas growth' or `Johannitrieb' (see Figure \ref{fig:fig_2xxx}). This indicates that shoot growth may come to a halt because the demand for water to support an increasing leaf area cannot be met. Since above and below-ground meristem experience large differences in temperature, the higher growth rate of shoots may soon result in an imbalanced root-shoot-ratio that can only be overcome by sustaining growth of the apical meristems until root growth has caught up to reach the supply capacity. A high evapotranspiration or a drying soil might have the same effect. Such a `stop-and-go' behavior of the apical meristem as a  consequence of lower growth rates in roots could explain the poly-cyclic flushing patterns observed in some species \cite{girardPolycyclismFundamentalTree2011}. This latter mechanism is also supported by experimental data. Artificial reduction of the leaf area caused terminal buds to keep growing until the original leaf area was re-established \citep{borchertSimulationRhythmicTree1973}. Similarly many species produce new shoots after a damaging spring frost or after severe herbivory in order to rebuild their canopy. \\
+There is indeed evidence that under favorable conditions, particularly under high soil moisture availability throughout the growing season, the time of shoot elongation is extended, e.g. by enabling an additional flush REF. Such findings indicate that shoot growth may come to a halt because the demand for water to support an increasing leaf area cannot be met. Hence an imbalance of the root:shoot ratio under a given water status of the plant can suppress primary growth as was shown experimentally by \citet{borchertSimulationRhythmicTree1973}. By the same mechanism, many species are able to produce new shoots to rebuild the canopy after a considerable loss of leaf area due to herbivory or damaging spring frosts REF. 
 
-This perspective suggests that the environment can completely flip a species' strategy---but research shows this is not the case. While manipulations on root:shoot ratios have shown a certain plasticity of the apical shoot meristem to adjust leaf area after disturbance, we still observe distinct growth patterns when environmental conditions remain favorable . Hence, there must be an underlying internal program that sets the potential of how trees grow and explains the variation of growth habits among species we observe in the same environmental conditions (see Table XX for a list of species and their main growth strategy). 
-
+One might conclude that the environment can completely flip a species' strategy---but research shows that this is not the case REF.  While many species have shown a certain plasticity of the apical shoot meristem, they still exhibit distinct growth patterns when environmental conditions remain favorable and disturbances are excluded REF. Hence, there must be an underlying internal program that sets the potential of how trees grow and explains the variation of growth habits among species we observe in the same environmental conditions (see Table XX for a list of species and their main growth strategy). 
 
 latitudinal gradients and population differences within a species...Sally?
 	
-these are fundamental trade-offs --- both successful and co -occur in communities
-	successional stage, ontogeny, life span, evolution
-	
-	we should talk also about some downsides of the indeterminate strategy. e.g. faster turnover, increased exposure to risky climate, 
-	
+what are the fundamental trade-offs? 
+do indeterminate species grow faster and have a shorter life span? hence faster turnover?
+
+both growth strategies are successful and co -occur in communities
+indeterminate species are often early successional ones \citep{marksRelationExtensionGrowth1975, boojhGrowthStrategyTrees1982}
+ontogeny as another control mechanism: becoming more conservative and determinate with age	
+
 	...but will both still be successful with CC?
 	
 \section*{The role of (in)determinacy with climate change}
@@ -170,12 +194,6 @@ The flexible growth strategies of indeterminate species that help them exploit l
 
 We argue that new opportunities and challenges for trees with climate change will increasingly disrupt their phenological cycle, favoring species who are more plastic in rearranging their activities by resuming growth, reproduction and/or storage filling later in the year, thereby recovering from and compensating for some stress-induced damages and losses. Future climate will therefore likely intensify the competition among co-occurring species and might re-assemble forest communities increasingly composed of species adopting an indeterminate growth strategy.
 	
-								\begin{figure}
-								\centering
-								\includegraphics[width=0.9\textwidth]{Fig_3_V3.pdf} 
-								\caption{Hypothesized predictions of growth rates for the three major meristems (apical, cambium and root) classes of trees under current and warmer climates following an extreme determinate (A) and indeterminate (B) growth strategy. The area under the curve is summarized as yearly biomass increment in the respective bar-plot. Arrows indicate the shift of growth phenology under warmer climate conditions. Root meristems appear to be purely temperature-opportunistic for both strategies, even growing during warm winter spells. The indicated genera were observed to showcase the illustrated trends. The responses of these two contrasting growth strategy might apply not only to different tree species but also within a population (e.g. along environmental gradients) and even within an individual as it transitions from the juvenile to the adult stage (ontogeny).}
-								\label{fig:fig_3xxx}
-							\end{figure}
 	
 								\begin{figure}
 								\centering
@@ -198,6 +216,12 @@ Regarding below-ground meristems, roots seem to follow a much more opportunistic
 
  Future studies should therefore link the temporal dynamics of primary (apical and root) and secondary (cambial) meristems. Correlating annual tree rings with shoot increments could reveal such a common pattern, if accounting for when inter-annual shoot segments (phytomers) were produced, e.g. separating preformed from neo-grown tissue (REF Günter?). Revealing the patterns of when different meristems are active will likely contribute to a theoretical framework of temporal carbon allocation dynamics.
 
+							\begin{figure}
+							\centering
+							\includegraphics[width=0.9\textwidth]{Fig_3_V3.pdf} 
+							\caption{Hypothesized predictions of growth rates for the three major meristems (apical, cambium and root) classes of trees under current and warmer climates following an extreme determinate (A) and indeterminate (B) growth strategy. The area under the curve is summarized as yearly biomass increment in the respective bar-plot. Arrows indicate the shift of growth phenology under warmer climate conditions. Root meristems appear to be purely temperature-opportunistic for both strategies, even growing during warm winter spells. The indicated genera were observed to showcase the illustrated trends. The responses of these two contrasting growth strategy might apply not only to different tree species but also within a population (e.g. along environmental gradients) and even within an individual as it transitions from the juvenile to the adult stage (ontogeny).}
+							\label{fig:fig_3xxx}
+						\end{figure}
 
 	\subsection*{Evolution of (In)determinacy}
 	Understanding how universally tissues within species are formed determinately or indeterminately could provide insight into the evolution of this trait, which could be aided by cross-species analyses. Both growth forms seem to occur across most species of the same genera or clade and hence, appear to have evolved repeatedly in different groups, making it difficult to speculate on which strategy is ancestral \citep[but see][]{hariharanIndeterminateGrowthCould2016} and how rapidly (in)determinacy can evolve. As data on which species are determinate or indeterminate accumulates, such analyses could potentially provide rapid insights into this, and also aid forecasting for unsampled species. Assigning species as determinate or indeterminate, however, may be slow if the trait is actually better considered as continuous. 
@@ -220,9 +244,7 @@ Regarding below-ground meristems, roots seem to follow a much more opportunistic
 
 	
 \section*{Acknowledgments}
-	Justin Ngo for the help in illustrating
-	
-
+	This text emerged from a grant of the Swiss National Foundation to F.B. (grant number P500PB\textunderscore 210943). We thank J. Ngo for designing figure 2 and XXXX
 	
 	
 
@@ -244,8 +266,6 @@ If experiments are conducted in conditions with unlimited soil moisture and unde
  
  Even in grasslands an earlier onset of growth is associated with an earlier stop under climate warming \cite{mohlGrowthAlpineGrassland2022a}
 	
-indeterminate species are often early successional ones \citep{marksRelationExtensionGrowth1975, boojhGrowthStrategyTrees1982}
-
 	
 	must include: 
 	
