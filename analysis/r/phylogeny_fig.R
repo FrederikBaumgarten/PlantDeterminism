@@ -5,11 +5,11 @@ if(length(grep("deirdreloughnan", getwd()) > 0)) {
   setwd("~/Documents/github/egret")
 } else if(length(grep("Lizzie", getwd()) > 0)) {
   setwd("~/Documents/git/projects/others/deirdre/egret")
-} else{
-  setwd("/home/deirdre/egret") # for midge
+} else if(length(grep("frederik", getwd())) > 0){
+  setwd("/Users/frederik/github/PlantDeterminism/analyses")
 }
 
-library(tidyverse)
+#library(tidyverse)
 library(stringr)
 library(ape)
 library(phytools)
@@ -17,18 +17,52 @@ library(geiger)
 library(pez)
 library(caper)
 library(phangorn)
+library(readxl)
 
 rm(list = ls()) # Clear whatever is already in R's memory
 options(stringsAsFactors=FALSE)# Make sure words are read in as characters rather than factors
 
-egret <- read.csv("input/egretData.csv")
-egret$sp.name <- paste(egret$genus, egret$species, sep = "_")
+# read in the data
 
-sps.list <- sort(unique(egret$sp.name))
-genus.list=sort(unique(egret$genus))
+det <- read_excel("input/Determinism.xlsx")
+det$sp.name <- paste(det$genus, det$species, sep = "_")
+
+### combine with trait of determinacy
+# 1 is indeterminate
+# 2 is mixed
+# 3 is determinate
+
+
+#make a new column with this trait
+det$trait_det <- NA
+
+#if there is a "x" in column "Determinate_all_preformed"
+det[!is.na(det$Determinate_all_preformed),"trait_det"] <- 3 #determinate assiged with 3
+det[!is.na(det$Intermediate_preformed_neogrown),"trait_det"] <- 2 #intermediate assiged with 2
+det[!is.na(det$Indeterminate_all_neogrown),"trait_det"] <- 1 #indeterminate assiged with 1
+
+unique(det$trait_det)
+
+## species to keep:
+#remove species with NA in trait_det
+det<-det[!is.na(det$trait_det),]
+
+#remove all rows containing "spp" in "species"
+det <- det[!grepl("spp|ssp", det$species),]
+
+#calculate the mean of the trait_det for each species
+df_trait <- aggregate(det["trait_det"], det[c("sp.name")], function(x) {
+  mean(x, na.rm=TRUE)
+})
+
+
+unique(df_trait$sp.name)
+sps.list <- sort(unique(df_trait$sp.name))
+genus.list=sort(unique(df_trait$genus))
+
 
 ## load phylo (from Smith and Brown 2019)
-phy.plants<-read.tree("..//pheno_bc/data/ALLMB.tre")
+phy.plants<-read.tree("./input/ALLMB.tre")
 
 ## getting a list of genera in S&B's phylo
 phy.genera<-unlist(
@@ -36,8 +70,8 @@ phy.genera<-unlist(
 )
 phy.genera.uniq<-sort(unique(phy.genera))
 
-## how many phenobc species are in the phylogeny?
-phenosp.genus.inphylo<-genus.list[which(!genus.list%in%phy.genera.uniq)] #182 out of our 185
+## how many genera of det.csv are in the phylogeny?
+phenosp.genus.inphylo<-genus.list[which(genus.list%in%phy.genera.uniq)] #182 out of our 185
 
 ## first prune the phylogeny to include$ only these genera
 # phy.genera.egret<-drop.tip(phy.plants,
@@ -48,25 +82,13 @@ tree <- drop.tip(phy.plants, which(!phy.plants$tip.label %in% sps.list))
 length(tree$tip.label)
 sort(tree$tip.label)
 
-write.tree(tree,"analyses/output/egretPhylogeny.tre")
+#basic plotting
+plot(tree, type="fan")
 
-# only 273 species are in the phylogeny, lost 61
+write.tree(tree,"./output/determinacyPhylogeny.tre")
 
-unique(egret$datasetID)
 
-egret$count <- 1
-egretSub <- unique(egret[,c("sp.name", "datasetID", "count")])
-studyNo <- aggregate(egretSub["count"], egretSub[c("sp.name")], FUN = sum)
 
-temp <- subset(studyNo, count >1) # 26 sp with more than one study
-
-# [1] "Asparagus_acutifolius"   "Betula_utilis"           "Clematis_vitalba"        "Colutea_armena"         
-# [5] "Degenia_velebitica"      "Dorema_ammoniacum"       "Echinacea_angustifolia"  "Echinacea_purpurea"     
-# [9] "Eucalyptus_delegatensis" "Fagus_sylvatica"         "Ferula_assa-foetida"     "Ferula_gummosa"         
-# [13] "Gentiana_lutea"          "Hippophae_rhamnoides"    "Jatropha_curcas"         "Juniperus_communis"     
-# [17] "Kelussia_odoratissima"   "Phlox_pilosa"            "Picea_glauca"            "Pinus_koraiensis"       
-# [21] "Pinus_strobus"           "Primula_veris"           "Prunus_africana"         "Trema_cannabina"        
-# [25] "Tsuga_heterophylla"      "Zizania_palustris"
 
 namesphy <- tree$tip.label
 tree$root.edge <- 0
@@ -74,11 +96,11 @@ tree$root.edge <- 0
 is.rooted(tree)
 tree$node.label<-NULL
 
-dataPhy = comparative.data(tree, studyNo, names.col = "sp.name", na.omit = T,
+dataPhy = comparative.data(tree, df_trait, names.col = "sp.name", na.omit = T,
                            vcv = T, warn.dropped = T)
 
 phyloplot = dataPhy$phy
-x = dataPhy$data$count
+x = dataPhy$data$trait_det
 names(x)=dataPhy$phy$tip.label
 
 study <- contMap(tree, x, plot = T)
@@ -86,7 +108,11 @@ study <- contMap(tree, x, plot = T)
 slopeCol <- setMap(study, colors=c("blue","yellow","red"))
 h<-max(nodeHeights(slopeCol$tree))
 
-pdf("figures/phyloIntColor.pdf", height = 20, width = 7)
+pdf("./output/phyloIntColor.pdf", height = 20, width = 7)
 plot(slopeCol,legend = F, lwd=3, ylim=c(1-0.09*(Ntip(slopeCol$tree)),Ntip(slopeCol$tree)))
 
 dev.off()
+
+
+
+
