@@ -17,7 +17,7 @@
 \usepackage{capt-of}%allows me to set a caption for code in appendix 
 \usepackage[export]{adjustbox} % adding a box around a map
 \usepackage{lineno}
-%\linenumbers
+\linenumbers
 
 \usepackage[margin=2cm]{geometry}
 \usepackage[most]{tcolorbox}
@@ -82,14 +82,17 @@
 	} 
 	
 	\date{\today}
-	\author{Frederik Baumgarten\textsuperscript{1,2}, Sally Aitken\textsuperscript{1}, Yann Vitasse\textsuperscript{2}, Rob Guy\textsuperscript{1}, EM Wolkovich\textsuperscript{1}}
+	\author{Frederik Baumgarten\textsuperscript{1-3}, Sally Aitken\textsuperscript{1}, Yann Vitasse\textsuperscript{3}, Rob Guy\textsuperscript{1}, EM Wolkovich\textsuperscript{1}}
 	\maketitle
 	
 	$^1$ Department of Forest and Conservation, Faculty of Forestry, University of British Columbia, 2424 Main Mall
 	Vancouver, BC Canada V6T 1Z4. \\
 	
 	$^2$  
-	Department of Environmental Sciences-Botany, University of Basel, Schönbeinstrasse 6, Basel 4056, Switzerland
+	Department of Environmental Sciences-Botany, University of Basel, Schönbeinstrasse 6, Basel 4056, Switzerland. \\
+	
+	$^3$  
+	Swiss Federal Institute for Forest, Snow and Landscape Research WSL, Zürcherstrasse. 111, Birmensdorf 8903, Switzerland
 	\\
 	
 	Corresponding Author: Frederik Baumgarten; frederik.baumgarten@unibas.ch \\
@@ -108,18 +111,16 @@
 	
 	
 \section*{Abstract} %200 words for perspective 
-	When and how much organisms grow given environmental constraints and opportunities are fundamental questions in biology that are becoming increasingly pressing with climate change, as we seek to accurately predict biomass production and carbon sequestration. 
-	While environmental factors such as temperature and water availability directly regulate plant growth, the timing of growth is also governed by a plant’s phenological sequence—its genetically programmed developmental stages—which is critical for predicting responses to climate change but often overlooked. 
+	When and how much organisms grow given environmental constraints and opportunities are fundamental questions in biology, especially pressing in the context of climate change as we seek to accurately predict biomass production and carbon sequestration. While environmental factors such as temperature and water availability directly regulate plant growth, the timing of growth is also governed by a plant’s phenological sequence—its genetically programmed developmental stages—which is critical for predicting climate responses but often overlooked.
 	
-	Here, we leverage the concept of (in-)determinacy in growth and development---which captures how flexible, or not, plants are in 
-	producing tissue from preformed cells versus initiating it \textit{de novo}—to propose a new framework for predicting tree growth responses to climate change.
+	Here, we leverage the concept of (in-)determinacy in growth and development—which captures how flexible, or not, plants are in producing tissue from preformed cells versus initiating it \textit{de novo}—to propose a new framework for predicting tree growth responses to climate change.
 	
-	We hypothesize that: 1) determinate growth is an adaptation to more predictable seasonal climate conditions, restricting investment in new tissues to a short favorable period before dormancy; 2) indeterminate species may recover more effectively from damage, giving them an advantage under increasing climatic extremes; and 3) species with higher indeterminacy are more likely to benefit from extended growing seasons. 
+	We hypothesize that: 1) determinate growth is an adaptation to predictable seasonal climates, restricting new tissue investment to a short favorable period before dormancy; 2) indeterminate species may recover more effectively from damage, giving them an advantage under increasing climatic extremes; and 3) species with higher indeterminacy are more likely to benefit from extended growing seasons.
 	
-	Consequently, the amount of carbon sequestered in future climates may depend not only on abiotic factors such as water availability, temperature extremes, and the length of the growing season, but also on the degree of determinacy set by a species' intrinsic genetic programming.\\
+	Thus, future carbon sequestration may depend not only on how environmental factors change, but also on the degree of determinacy set by a species’ intrinsic genetic programming.\\
 		% : the ability of trees to preform tissue as an investment for next year’s growth that will overwinter in buds vs. a strategy that additionally relies on the continuous activity of the apical meristem throughout the growing season (neo-formed tissue)
 		
-			\textbf{Keywords}: plant growth, tree phenology, shoot extension, indeterminate growers, carbon sequestration, growing season length, drought, genetic programming, phenotypic plasticity
+			\textbf{Keywords}: plant growth, tree phenology, shoot extension, indeterminate growers, carbon sequestration, growing season length, drought, genetic programming, phenotypic plasticity, forest productivity
 			\newpage
 			
 \section*{Introduction}
@@ -213,7 +214,7 @@ Although this concept is often presented dichotomously \citep{kozlowskiGrowthCon
 Moreover, indeterminate growth allows for greater phenotypic plasticity, as tissue is produced in real-time in response to current conditions. In contrast, determinate species preform tissues in advance and are thus more constrained by past conditions, particularly those experienced during bud formation. As a result, determinate species may exhibit stronger local adaptation and reduced short-term plasticity compared to indeterminate species  \citep{leitesForestTreeSpecies2023}. For example, western larch (\textit{Larix occidentalis}) achieves much of its primary shoot growth from indeterminate growth %(a combination of lammas and neoformed shoot growth), 
 	and is less locally adapted than the sympatric species Douglas-fir, which growth more determinately \citep{roskillyWeakLocalAdaptation2024}.\\
 
-	As climate changes the question arises which growth strategy will be more successful in the future.
+%As the climate continues to change, the central question becomes: Which growth strategy will prove more successful in the future?
 
 								
 %	\begin{mytextbox}[]
@@ -267,6 +268,29 @@ We argue that new opportunities and challenges for trees with climate change wil
 		%	\label{fig:fig_3xxx}
 		%	\end{figure}
 	
+	\begin{tcolorbox}[
+		colback=gray!5!white,  % Background color of the box
+		colframe=black,      % Frame color
+		coltitle=white,      % Title (header) text color
+		fonttitle=\bfseries, % Makes the title bold
+		boxrule=0.5pt,       % Frame line thickness
+		title=\textbf{Box 1: Metrics of (In)determinacy}
+		]
+	
+		To advance our understanding of growth strategies under climate change, we need improved methods for quantifying the degree of (in)determinacy—moving beyond a simple binary classification. We propose a set of metrics, ranging from organ-level traits to landscape-scale proxies:\\
+		
+
+			\textbf{Ratio of preformed to neoformed tissue:} 
+			The ratio of the number of leaves (or leaf scars) at the end of the season to the number of leaf primordia initially formed in buds provides a direct measure of (in)determinacy. Values greater than one indicate a higher degree of indeterminate growth. First described over a century ago \citep{mooreStudyWinterBuds1909}, this metric has been used by only few studies \citep{damascosBudCompositionBranching2005, kikuzawaLeafSurvivalWoody1983, guedonRelativeExtentsPreformation2006}. Micro-CT imaging offers a modern, non-destructive alternative to bud dissection.\\
+			
+			 \textbf{Seasonal growth patterns:} Temporal tracking of shoot elongation and wood formation—via micro-coring, dendrometers, or shoot measurements—reveals when and how new tissue is produced. Wood anatomical analyses distinguish cell formation from later development. High-resolution LiDAR and spectral imaging are increasingly capable of capturing shoot elongation and structural changes across whole crowns or stands.\\
+			
+			\textbf{Seasonal trends in canopy greenness:} Satellite and drone imagery can track vegetation green-up and senescence at large spatial scales. For example, \citet{mengConsistentTimeAllocation2024} found that time allocation between green-up and senescence remained consistent across temperate ecosystems, despite substantial variation in growing season length and warming intensity.\\
+			
+			\textbf{Ecosystem-scale carbon fluxes:} Eddy covariance towers measure net carbon exchange, providing ecosystem-level signals of growth activity. Extended or bimodal periods of CO$_2$ uptake may reflect indeterminate growth, while sharp, narrow peaks may suggest determinate growth. When combined with phenological observations (e.g., LAI, phenocams), EC data can help infer growth timing and seasonal flexibility.
+
+	\end{tcolorbox}
+	
 	
 \section*{Future directions}
 We argue that incorporating plant determinacy into models of forest dynamics could greatly improve predictions of how climate change will affect ecosystem composition and productivity. The impacts of both climatic extremes and longer growing seasons on primary and secondary growth may depend strongly on the relative abundance of determinate versus indeterminate species within a forest community. Better understanding these two strategies will also help to reveal the potentials and limits of trees to adapt in a future climate, and may inform species or provenance choices in forest management.
@@ -280,22 +304,7 @@ And finally we need to link the temporal dynamics of primary (apical and root) a
 
 
 	
-	\subsection*{Metrics of (In)determinacy} % probably put into a box
-	To advance our understanding of growth strategies under climate change, we need improved methods for quantifying the degree of (in)determinacy—moving beyond a simple binary classification. We propose a set of metrics, ranging from the most direct to broader, landscape-level proxies: \\
-	
-	(1) The ratio of the number of leaves (leaf scars) present at the end of the season to the number of leaf primordia in buds at the start of the season provides a direct measure of (in)determinacy. Values greater than one indicate an increasing degree of indeterminate growth. Although this metric was already described over a century ago by \citet{mooreStudyWinterBuds1909}, its application has been limited to few studies exploring specific regions only \citep{damascosBudCompositionBranching2005, kikuzawaLeafSurvivalWoody1983, guedonRelativeExtentsPreformation2006}.To reveal a species' intrinsic capacity for indeterminate growth, individuals should ideally be grown under consistently favorable conditions (e.g. unlimited soil moisture).\\
-	
-	(2) Temporal tracking of shoot elongation and wood formation (e.g. using biweekly micro-cores or shoot elongation measurements) enables the detection of preformed versus neoformed tissue and growth timing. Wood anatomical analyses can help distinguish cell formation from subsequent cell expansion and maturation.\\
-	
-	(3) Although dendrometer measurements integrate multiple processes (e.g., stem swelling, water content, and cambial activity), they can provide high-resolution insights into periods of growth versus stasis and detect water deficits associated with suppressed growth \cite{etzoldNumberGrowthDays2021, zweifelWhyTreesGrow2021}. \\
-	
-	(4) Large-scale forest monitoring networks (e.g. U.S. Forest Inventory) can be used to track multiple flushes and identify spatial patterns in flushing behavior across species and climates. \\%@Lizzie: any references here and examples/specifics of how to use it?
-	
-	(5) Seasonal trends in canopy greenness captured by satellite and drone imagery can reveal growth investment strategies at the ecosystem scale across large spatial areas. As a recent example, \citet{mengConsistentTimeAllocation2024} found that time allocation between vegetation green-up (from start of the growing season to its peak) and vegetation senescence (between peak and end of season) remained remarkably consistent, despite substantial variation in growing season length and climate warming across temperate ecosystems in the Northern Hemisphere.  \\%Could be also a section "Evidence for internal growth control" 
 
-	(6) Advances in LiDAR and spectral imaging technologies—both from drones and satellites—are beginning to offer the spatial and temporal resolution necessary to detect fine-scale structural changes in canopies. These tools have the potential to capture patterns of shoot elongation and flushing events integrated across whole crowns or forest stands. With continued development, such remote sensing techniques could allow researchers to monitor canopy-level expressions of shoot growth dynamics, helping to infer degrees of (in)determinacy across species and ecosystems in near real-time.  
-	%number of  growth days under favourable conditions for both total growth and neogrowth
-	
 	%
 
 	
@@ -307,35 +316,35 @@ And finally we need to link the temporal dynamics of primary (apical and root) a
 	
 
 	\newpage
-\section*{stuff I did't find place yet}
+%\section*{stuff I did't find place yet}
 
-Deciduous tree species have a higher number of leaf primordia inside their buds than evergreen species in the Cerrado (Brazil). 
+%Deciduous tree species have a higher number of leaf primordia inside their buds than evergreen species in the Cerrado (Brazil). 
 	
-If experiments are conducted in conditions with unlimited soil moisture and under similar temperature regimes, then the dynamics of growth responses can be comparable among species and reveal their potential in deploying indeterminate growth. Under natural conditions with common soil moisture and associated turgor limitations it is currently hard to tell if trees cease growth because of a response to the environment or because of switches in resource allocation. 
+%If experiments are conducted in conditions with unlimited soil moisture and under similar temperature regimes, then the dynamics of growth responses can be comparable among species and reveal their potential in deploying indeterminate growth. Under natural conditions with common soil moisture and associated turgor limitations it is currently hard to tell if trees cease growth because of a response to the environment or because of switches in resource allocation. 
  
- Even in grasslands an earlier onset of growth is associated with an earlier stop under climate warming \cite{mohlGrowthAlpineGrassland2022a}
+% Even in grasslands an earlier onset of growth is associated with an earlier stop under climate warming \cite{mohlGrowthAlpineGrassland2022a}
 	
 	
-	must include: 
+%	must include: 
 	
-	\cite{iwasaOptimalGrowthSchedule1989}
+%	\cite{iwasaOptimalGrowthSchedule1989}
 	
 	
 	
-	Shoot growth patterns do not only tell us something about the plant architecture and the strategy of space exploitation, but may reveal also patterns of the whole-plant dynamic and potential of growth and carbon sequestration.
+%	Shoot growth patterns do not only tell us something about the plant architecture and the strategy of space exploitation, but may reveal also patterns of the whole-plant dynamic and potential of growth and carbon sequestration.
 	
-	unit of extension vs. unit of morphogenesis: Perhaps state somewhere that we commonly only observe the extension pattern while patterns of organogenesis remain hidden. 
+%	unit of extension vs. unit of morphogenesis: Perhaps state somewhere that we commonly only observe the extension pattern while patterns of organogenesis remain hidden. 
 	
-	\citep{verduEvolutionaryCorrelationsPolycyclic2007}: polycylcic flushing in acer might be associated to maximize the light capture in the understory
-	ontogenetic changes towards monocyclic growth might reflect the urge for light in the early life phase
+%	\citep{verduEvolutionaryCorrelationsPolycyclic2007}: polycylcic flushing in acer might be associated to maximize the light capture in the understory
+%	ontogenetic changes towards monocyclic growth might reflect the urge for light in the early life phase
 	
-	 \citep{wuPhenotypicPlasticitySylleptic2001}: proleptic and sylleptic branching. great reference for phenotypic plasticity and how sylleptic growth (a form of indeterminate growth) might be beneficial more stressful/unpredictable climates
+%	 \citep{wuPhenotypicPlasticitySylleptic2001}: proleptic and sylleptic branching. great reference for phenotypic plasticity and how sylleptic growth (a form of indeterminate growth) might be beneficial more stressful/unpredictable climates
 	
-	\citep{moreno-cortesCsRAV1InducesSylleptic2012}: Chestnut CsRAV1 is a gene that is under circadian control and induces sylleptic branching when over-expressed in hybrid poplar. Its a promising candidate to enhance biomass production in trans-genic plants. It is intriguing that genes are identified and suggested to be used in trans-genic plants to enhance biomass production, but at the same time we even don't know if there is a correlation of sylleptic branching and biomass production among forest tree species.
+%	\citep{moreno-cortesCsRAV1InducesSylleptic2012}: Chestnut CsRAV1 is a gene that is under circadian control and induces sylleptic branching when over-expressed in hybrid poplar. Its a promising candidate to enhance biomass production in trans-genic plants. It is intriguing that genes are identified and suggested to be used in trans-genic plants to enhance biomass production, but at the same time we even don't know if there is a correlation of sylleptic branching and biomass production among forest tree species.
 	
-	\citep{hollenderMolecularBasisAngiosperm2015} recent review on architecture
+%	\citep{hollenderMolecularBasisAngiosperm2015} recent review on architecture
 	
-	\citep{wuQuantitativeGeneticsGrowth1998}Quantitative genetics of growth and development in Populus. III. Phenotypic plasticity of crown structure and function
+%	\citep{wuQuantitativeGeneticsGrowth1998}Quantitative genetics of growth and development in Populus. III. Phenotypic plasticity of crown structure and function
 	
 	\newpage
 	
