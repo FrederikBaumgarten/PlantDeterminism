@@ -16,3 +16,6 @@
 *Rplots.pdf
 *.DS_Store
 /notposting
+.DS_Store
+figures/.DS_Store
+~$*.xlsx
