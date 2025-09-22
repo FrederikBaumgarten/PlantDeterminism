@@ -1,0 +1,207 @@
+\documentclass{article}
+
+
+%preamble
+%required
+%\usepackage{Sweave} %Integrates R code with LaTeX for creating dynamic reports
+\usepackage{natbib}%Provides citation and bibliography support
+\usepackage{amsmath}%Enhances mathematical typesetting capabilities.
+\usepackage{textcomp}%among other things, it allows degrees C to be added
+\usepackage{float}%Helps with precise figure placement using the [H] option.
+\usepackage[utf8]{inputenc} % allow funny letters in citations 
+\usepackage[T1]{fontenc}
+\usepackage[nottoc]{tocbibind} %should add Re fences to the table of contents?
+\usepackage{amsmath} % making nice equations 
+\usepackage{listings} % add in stan code
+\usepackage{xcolor}
+\usepackage{capt-of}%allows me to set a caption for code in appendix 
+\usepackage[export]{adjustbox} % adding a box around a map
+\usepackage{lineno}
+\linenumbers
+\usepackage{setspace}
+\doublespacing
+\usepackage[small]{caption}
+\captionsetup{font=doublespacing}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[most]{tcolorbox}
+
+\newtcolorbox{mytextbox}[1][]{% specify textbox
+	sharp corners,
+	enhanced,
+	colback=white,
+	height=15cm,
+	attach title to upper,
+	#1
+}
+
+% recommended! Uncomment the below line and change the path for your computer!
+% \SweaveOpts{prefix.string=/Users/Lizzie/Documents/git/teaching/demoSweave/Fig.s/demoFig, eps=FALSE} 
+%put your Fig.s in one place! Also, note that here 'Fig.s' is the folder and 'demoFig' is what each 
+% Fig. produced will be titled plus its number or label (e.g., demoFig-nqpbetter.pdf')
+% make your captioning look better
+
+
+\usepackage{xr-hyper} %refer to Fig.s in another document
+\usepackage{hyperref}
+
+\setlength{\captionmargin}{30pt}
+\setlength{\abovecaptionskip}{0pt}
+\setlength{\belowcaptionskip}{10pt}
+
+% optional: muck with spacing
+\topmargin -1.5cm        
+\oddsidemargin 0.5cm   
+\evensidemargin 0.5cm  % same as odd side margin but for left-hand pages
+\textwidth 15.59cm
+\textheight 21.94cm 
+% \renewcommand{\baselinestretch}{1.5} % 1.5 lines between lines
+\parindent 0pt		  % sets leading space for paragraphs
+% optional: cute, fancy headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\fancyhead[LO]{Frederik Baumgarten}
+%\fancyhead[RO]{Research Proposal}
+% more optionals! %
+
+\usepackage{graphicx}
+\graphicspath{{/Users/frederik/github/PlantDeterminism/figures/}} % specify the path to your figures directory
+
+
+
+
+\begin{document}
+	
+	
+%	\title{Invest now, get paid later? Limits and opportunities of woody plants to time growth in a future climate
+		\title{Figures %(my favourite)
+		
+		%dlDec18: Alternate title ideas:
+		%Growth determinism/determinacy/habits in plants/woody perennials/trees: Limits and opportunities to time growth in a future climate. 
+		
+		%Growth determinacy in temperate trees: investing at the right time to cope with environmental stress and benefit from extended growing seasons in a future climate.
+		
+		%Invest now, get paid later? Growth strategies to cope with environmental stress and benefit from extended growing seasons in a future climate
+		
+	
+	} 
+	
+%	\date{\today}
+%	\author{Frederik Baumgarten\textsuperscript{1-3}, Sally Aitken\textsuperscript{1}, Yann Vitasse\textsuperscript{3}, Robert D Guy\textsuperscript{1}, EM Wolkovich\textsuperscript{1}}
+	\maketitle
+	
+	%$^1$ Department of Forest and Conservation, Faculty of Forestry, University of British Columbia, 2424 Main Mall
+	%Vancouver, BC Canada V6T 1Z4. \\
+	
+%	$^2$  
+	%Department of Environmental Sciences-Botany, University of Basel, Schönbeinstrasse 6, Basel 4056, Switzerland. \\
+	
+%	$^3$  
+%	Swiss Federal Institute for Forest, Snow and Landscape Research WSL, Zürcherstrasse. 111, Birmensdorf 8903, Switzerland
+	
+	
+	Corresponding Author: Frederik Baumgarten; frederik.baumgarten@unibas.ch \\
+	Type of article: Perspective\\
+	
+
+	
+	%Full word count: \\
+	%Summary word count: \\
+	%Introduction word count: \\
+	%Materials and Methods word count: \\
+	%Results and figure legends word count: \\
+	%Discussion word count: \\
+	
+	%werwolve: how is tree growth impacted by climate change? 1) by extreme events and 2) by an extended growing season? 
+	%baby: better predictions of when environmental factors are influencing growth taking into account the phenological sequence of a species
+	%silverbullet: concept of determinism
+	
+
+	
+
+			
+
+		
+								\begin{figure}
+								\centering
+								\includegraphics[width=0.8\textwidth]{Fig_1_V6.pdf} 
+								\caption{Schematic overview of the possible discrepancy between the potential growing season and the effectively realized vegetative growth (shoot and possibly cambial growth). 
+										When environmental factors, such as temperature and soil moisture, exceed growth-promoting thresholds they can act as filters that narrow the window of opportunity available for vegetative growth (potential light and photoperiodic constraints are not shown). The species-specific life history cycle (phenology) can impose another filter by dictating a dormancy cycle and prioritizing developmental processes other than vegetative growth (e.g. flowering, fruit maturation and storage). The degree of (in)determinacy is presented here in two extremes, although we propose to consider this trait as continuous.} 
+								
+								\label{fig:fig_1xxx}
+								\end{figure}
+								
+
+								\begin{figure}
+								\centering
+								\includegraphics[width=1.1\textwidth]{determinismFigure_FB.pdf} 
+								\caption{Determinate and indeterminate growth within one growing season for species producing terminal buds. Commonly all tree species deploy buds during their first (spring) flush from prebuilt and overwintering leaf primordia (LP) protected by bud scales (BS; A). Determinate growing species set buds (B) that are under hormonal suppression to inhibit any further activity of the shoot apical meristem -- SAM (paradormancy). The basic unit of a shoot is the phytomer which is composed of a node, a leaf, the axillary bud and an internode (see bottom right). Indeterminate growing species continue to produce new phytomers directly (C) or through one (D) to several (E) intermediate bud stage(s). Finally, most species set their terminal buds (F) and enter full dormancy (endodormancy).} 
+								\label{fig:fig_2xxx}
+								\end{figure}
+								
+								
+
+	
+								\begin{figure}
+								\centering
+								\includegraphics[width=0.9\textwidth]{Fig_3_V4.pdf} 
+								\caption{Hypothesized predictions of growth rates under current (upper panels) and future (lower panels) climate for determinate and indeterminate growing species. Note that the indeterminate strategy is more exposed to the risk of frost and drought events while the determinate strategy condenses most growth within a safe period. In the current climate the indeterminate strategy is in balance with benefiting from the full climatic growing season in some years with some drawbacks in other years, resulting in the same mean yearly biomass increment, but with a higher variation; right box). In a future climate the indeterminate strategy might benefit from longer growing seasons, resulting in an overall higher mean annual biomass increment compared to determinate growers, but this will be dependent on the severity of drought that overlaps the potential growth period of determinate species. Triangle outlines represent the activity window for a current (black) versus a future (red) climate.}
+								\label{fig:fig_4xxx}
+							\end{figure}
+	\pagebreak
+	
+
+	%	\begin{figure}
+		%	\centering
+		%	\includegraphics[width=0.9\textwidth]{Fig_3_V3.pdf} 
+		%	\caption{Hypothesized predictions of growth rates for the three major meristem (apical, cambium and root) classes of trees under current and warmer climates following an extreme determinate (A) and indeterminate (B) growth strategy. The area under the curve is summarized as yearly biomass increment in the respective bar-plot. Arrows indicate the shift of growth phenology under warmer climate conditions. Root meristems appear to be purely temperature opportunistic for both strategies, even growing during warm winter spells. The indicated genera were observed to showcase the illustrated trends. The responses of these two contrasting growth strategies might apply not only to different tree species but also within a population (e.g. along environmental gradients) and even within an individual as it transitions from the juvenile to the adult stage (ontogeny).}
+		%	\label{fig:fig_3xxx}
+		%	\end{figure}
+	
+%	\begin{tcolorbox}[
+%		colback=gray!5!white,  % Background color of the box
+%		colframe=black,      % Frame color
+%		coltitle=white,      % Title (header) text color
+%		fonttitle=\bfseries, % Makes the title bold
+%		boxrule=0.5pt,       % Frame line thickness
+   %		title=\textbf{Box 1: Metrics of (In)determinacy},
+%		label={box 1:metrics}
+%		]
+	
+	%	To advance our understanding of growth strategies under climate change, we need not only improved methods for quantifying the degree of (in)determinacy—but also more empirical data to apply and validate these approaches across species and ecosystems. Moving beyond a simple binary classification, we propose a set of metrics that span scales, from organ-level traits to landscape-scale proxies:\\
+		
+
+		%	\textbf{Ratio of preformed to neoformed organs:} 
+	%		The ratio of the number of leaves (or leaf scars) at the end of the season to the number of leaf primordia initially formed in buds provides a direct measure of (in)determinacy. Values greater than one indicate a higher degree of indeterminate growth. First described over a century ago \citep{mooreStudyWinterBuds1909}, this metric has been used in only a few studies \citep{damascosBudCompositionBranching2005, kikuzawaLeafSurvivalWoody1983, guedonRelativeExtentsPreformation2006}. Although quite distinct and easily counted in some species (e.g. maples; \citealt{critchfieldShootGrowthHeterophylly1971}), there are only slight morphological differences between neoformed and preformed leaves in others (e.g., black cottonwood). Time-lapse imaging, labeling or artificial wounding can facilitate the distinction between preformed and neoformed organs. The number of leaf primordia can be determined through bud dissection, but this precludes the counting of neoformed leaves that would later arise from the same meristem. Micro-CT imaging may offer a modern, non-destructive alternative to bud dissection \citep{kovaleskiXrayPhaseContrast2019}.\\
+			
+		%	 \textbf{Seasonal growth patterns:} Temporal tracking of shoot elongation and wood formation—via micro-coring, dendrometers, or regular shoot measurements—reveals when and how new tissue is produced. Wood anatomical analyses distinguish cell formation from later development, especially useful in combination with artificial wounding of the cambium that acts as a `marker in time’ (pinning technique; \citealt{gartnerCambialActivityMoringa2021a}). High-resolution LiDAR and photogrammetry are increasingly capable of capturing shoot elongation and structural changes across whole crowns or stands \citep{zhangForestsGrowthMonitoring2019, jinEstimationLarchGrowth2022}.\\
+			
+		%	\textbf{Seasonal trends in canopy greenness:} Satellite and drone imagery can track vegetation green-up and senescence at large spatial scales. For example, \citet{mengConsistentTimeAllocation2024} found that time allocation between green-up and senescence remained consistent across temperate ecosystems, despite substantial variation in growing season length and warming intensity. Such temporal dynamics of green coloration may provide indirect insights into determinacy as it reflects how primary growth is distributed across the season --- more extended or bimodal green coloration patterns may indicate indeterminate growth. However, green coloration is a crude proxy and may confound photosynthetic activity with actual organogenesis or elongation, so its interpretation as a (in)determinacy measure should be treated with caution.\\
+			
+		%	\textbf{Ecosystem-scale carbon fluxes:} Eddy covariance towers measure net carbon exchange, providing ecosystem-level signals of growth activity. Extended or bimodal periods of CO$_2$ uptake may reflect indeterminate growth, while sharp, narrow peaks may suggest determinate growth. When combined with phenological observations (e.g., LAI, phenocams), EC data can help infer growth timing and seasonal flexibility.
+
+%	\end{tcolorbox}
+	
+	
+						\begin{figure}
+		\centering
+		\includegraphics[width=0.9\textwidth]{phylo.pdf} 
+		\caption{Phylogenetic tree of plant species colored by growth determinacy trait values, visually representing the evolutionary distribution of growth strategies across taxa. This tree includes species for which shoot growth determinacy data were compiled (mainly from \citet{halleTropicalTreesForests1978} and \citet{kikuzawaLeafSurvivalWoody1983}), with the phylogeny pruned from the comprehensive seed plant tree of \citet{smithConstructingBroadlyInclusive2018a} to match the trait dataset. Growth determinacy was scored as indeterminate (blue), intermediate (yellow) and determinate (red), with mean values calculated per species when multiple entries existed. These values were then mapped as a continuous trait onto the phylogeny using the contMap() function from the phytools R package.}
+		\label{fig:phylo}
+	\end{figure}
+	\pagebreak
+	
+
+
+	\newpage
+
+	
+	
+	
+\end{document}
+
+
+
+
+
+

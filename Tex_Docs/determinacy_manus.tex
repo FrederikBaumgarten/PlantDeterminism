@@ -17,7 +17,9 @@
 \usepackage{capt-of}%allows me to set a caption for code in appendix 
 \usepackage[export]{adjustbox} % adding a box around a map
 \usepackage{lineno}
-\linenumbers
+%\linenumbers
+\usepackage{setspace}
+\doublespacing
 
 \usepackage[margin=2cm]{geometry}
 \usepackage[most]{tcolorbox}
@@ -81,22 +83,34 @@
 	
 	} 
 	
-	\date{\today}
+	%\date{\today}
 	\author{Frederik Baumgarten\textsuperscript{1-3}, Sally Aitken\textsuperscript{1}, Yann Vitasse\textsuperscript{3}, Robert D Guy\textsuperscript{1}, EM Wolkovich\textsuperscript{1}}
 	\maketitle
 	
 	$^1$ Department of Forest and Conservation, Faculty of Forestry, University of British Columbia, 2424 Main Mall
 	Vancouver, BC Canada V6T 1Z4. \\
-	
 	$^2$  
 	Department of Environmental Sciences-Botany, University of Basel, Schönbeinstrasse 6, Basel 4056, Switzerland. \\
-	
 	$^3$  
 	Swiss Federal Institute for Forest, Snow and Landscape Research WSL, Zürcherstrasse. 111, Birmensdorf 8903, Switzerland
 	\\
+	\textbf{Corresponding Author:}Frederik Baumgarten; frederik.baumgarten@unibas.ch; \\
+	Tel.: +41 61 207 23 37\\
+	\textbf{E-Mail-Addresses:} sally.aitken@ubc.ca; yann.vitasse@wsl.ch; rob.guy@ubc.ca;	e.wolkovich@ubc.ca\\
+\textbf{Type of article:} Perspective\\
+\textbf{Short running title:} (In)determinate growth strategies of trees\\
+\textbf{Keywords}: plant growth, tree phenology, shoot extension, indeterminate growers, carbon sequestration, growing season length, drought, genetic programming, phenotypic plasticity, forest productivity
+\textbf{wordnumbers:} abstract: 200; main text: 4005; box1: 404; number of figures: 4; number of tables: 0\\
+\textbf{number of references:} 84
+
+\textbf{Authors contribution:}
+	FB and EM initiated this project. FB took a lead in drafting, designed figures and performed phylogenetic analyses. All authors contributed substantially to the writing of the article.
 	
-	Corresponding Author: Frederik Baumgarten; frederik.baumgarten@unibas.ch \\
-	Journal: Perspective in Ecology Letters
+	\textbf{Data accessibility statement:}
+	The data supporting the phylogeny are archived in the following public repository. Link XXX
+	
+	\textbf{Conflict of interest statement:}
+	The authors declare no conflict of interest
 	
 	%Full word count: \\
 	%Summary word count: \\
@@ -109,18 +123,19 @@
 	%baby: better predictions of when environmental factors are influencing growth taking into account the phenological sequence of a species
 	%silverbullet: concept of determinism
 	
+
 	
 \section*{Abstract} %200 words for perspective 
-	When and how much organisms grow given environmental constraints and opportunities are fundamental questions in biology, and especially pressing in the context of climate change as we strive to accurately predict biomass production and carbon sequestration. While environmental factors such as temperature and water availability directly regulate plant growth, the timing and rate of growth is also governed by a plant’s phenological sequence—its genetically programmed developmental stages. This sequence is critical for predicting climate responses but is often overlooked.
+	When and how much organisms grow given environmental constraints are fundamental questions in biology, and especially pressing in the context of climate change as we strive to predict biomass production and carbon sequestration. While environmental factors such as temperature and water availability directly regulate plant growth, the timing and rate of growth are also governed by a plant’s phenological sequence—its genetically programmed developmental stages. This sequence is critical for predicting climate responses but is often underappreciated.
 	
-	Here, we leverage the concept of (in-)determinacy in growth and development—which captures how flexibly plants produce new organs from preformed cells versus initiating them \textit{de novo}—to propose a new framework for predicting tree growth responses to climate change.
+	Here, we leverage the concept of (in-)determinacy in growth and development—which captures how flexibly plants produce organs from preformed cells versus initiating them \textit{de novo}—to propose a new framework for predicting tree growth responses to climate change.
 	
-We hypothesize that: 1) determinate growth is an adaptation to strong seasonal climates, restricting new tissue investment to a short favorable period well before dormancy; 2) indeterminate species are more exposed to increasing climatic extremes (spring/fall frost, drought) but may recover more effectively from resulting damage; and 3) species with higher indeterminacy are more likely to benefit from lengthening frost-free growing seasons. 
+We hypothesize that: 1) determinate growth is an adaptation to strongly seasonal climates, restricting tissue investment to a short favorable period before dormancy; 2) indeterminate species are more exposed to increasing climatic extremes (spring/fall frost, drought) but may recover more effectively from resulting damage; and 3) species with greater indeterminacy are more likely to benefit from lengthening frost-free growing seasons. 
 %emw25Jul2025 -- If you have the word space, consider a better transition between the hypotheses and last sentence. Maybe: These hypotheses highlight that future carbon ...  
-	Future carbon sequestration may depend not only on how environmental factors change, but also on the degree of determinacy set by a species’ intrinsic genetic programming.\\
+	Thus, future carbon sequestration may depend not only on environmental changes, but also on the degree of determinacy set by intrinsic genetic programming.\\
 		% : the ability of trees to preform tissue as an investment for next year’s growth that will overwinter in buds vs. a strategy that additionally relies on the continuous activity of the apical meristem throughout the growing season (neo-formed tissue)
 		
-			\textbf{Keywords}: plant growth, tree phenology, shoot extension, indeterminate growers, carbon sequestration, growing season length, drought, genetic programming, phenotypic plasticity, forest productivity
+		%	\textbf{Keywords}: plant growth, tree phenology, shoot extension, indeterminate growers, carbon sequestration, growing season length, drought, genetic programming, phenotypic plasticity, forest productivity
 			\newpage
 			
 \section*{Introduction}
@@ -147,13 +162,13 @@ We hypothesize that: 1) determinate growth is an adaptation to strong seasonal c
 		In this perspective we revisit classical concepts of shoot growth patterns in woody perennials, generalize them across meristem types and position them within the context of climate change. We propose that mechanisms of internal growth control---especially those governing the degree of determinacy---are key features shaping how trees and other long-lived woody species will respond to future climatic conditions. 
 		%to introduce a framework for predicting when and how much trees and other woody plants in general may grow and discuss their role in a future climate. \\
 		
-								\begin{figure}
-								\centering
-								\includegraphics[width=0.9\textwidth]{Fig_1_V6.pdf} 
-								\caption{Schematic overview of the possible discrepancy between the potential growing season and the effectively realized vegetative growth (shoot and possibly cambial growth). 
-								When environmental factors, such as temperature and soil moisture, exceed growth-promoting thresholds they can act as filters that narrow the window of opportunity available for vegetative growth (potential light and photoperiodic constraints are not shown). The species-specific life history cycle (phenology) can impose another filter by dictating a dormancy cycle and prioritizing developmental processes other than vegetative growth (e.g. flowering, fruit maturation and storage). The degree of (in)determinacy is presented here in two extremes, although we propose to consider this trait as continuous.} 
-								\label{fig:fig_1xxx}
-								\end{figure}
+							%	\begin{figure}
+							%	\centering
+							%	\includegraphics[width=0.9\textwidth]{Fig_1_V6.pdf} 
+							%	\caption{Schematic overview of the possible discrepancy between the potential growing season and the effectively realized vegetative growth (shoot and possibly cambial growth). 
+							%	When environmental factors, such as temperature and soil moisture, exceed growth-promoting thresholds they can act as filters that narrow the window of opportunity available for vegetative growth (potential light and photoperiodic constraints are not shown). The species-specific life history cycle (phenology) can impose another filter by dictating a dormancy cycle and prioritizing developmental processes other than vegetative growth (e.g. flowering, fruit maturation and storage). The degree of (in)determinacy is presented here in two extremes, although we propose to consider this trait as continuous.} 
+							%	\label{fig:fig_1xxx}
+							%	\end{figure}
 								
 \section*{The concept of (in)determinate growth}
 
@@ -182,12 +197,12 @@ We hypothesize that: 1) determinate growth is an adaptation to strong seasonal c
 
 Although this concept is often presented dichotomously \citep{kozlowskiGrowthControlWoody1997, lechowiczWhyTemperateDeciduous1984a}, but see \citealp{kikuzawaLeafSurvivalWoody1983, damascosBudCompositionBranching2005}), with species classified as either determinate or indeterminate growers, most species likely exist along a gradient with numerous intermediate forms. For instance, many oaks (\textit{Quercus spp.}) are considered determinate growers, but can exhibit multiple flushes. Similarly, Douglas-fir (\textit{Pseudotsuga menziesii}) gradually adopts a more determinate growth habit with maturity \citep{borchertConceptJuvenilityWoody1976, heuretOntogeneticTrendsMorphological2006}.\\
 
-								\begin{figure}
-								\centering
-								\includegraphics[width=1.1\textwidth]{determinismFigure_FB.pdf} 
-								\caption{Determinate and indeterminate growth within one growing season for species producing terminal buds. Commonly all tree species deploy buds during their first (spring) flush from prebuilt and overwintering leaf primordia (LP) protected by bud scales (BS; A). Determinate growing species set buds (B) that are under hormonal suppression to inhibit any further activity of the shoot apical meristem -- SAM (paradormancy). The basic unit of a shoot is the phytomer which is composed of a node, a leaf, the axillary bud and an internode (see bottom right). Indeterminate growing species continue to produce new phytomers directly (C) or through one (D) to several (E) intermediate bud stage(s). Finally, most species set their terminal buds (F) and enter full dormancy (endodormancy).} 
-								\label{fig:fig_2xxx}
-								\end{figure}
+							%	\begin{figure}
+							%	\centering
+							%	\includegraphics[width=1.1\textwidth]{determinismFigure_FB.pdf} 
+							%	\caption{Determinate and indeterminate growth within one growing season for species producing terminal buds. Commonly all tree species deploy buds during their first (spring) flush from prebuilt and overwintering leaf primordia (LP) protected by bud scales (BS; A). Determinate growing species set buds (B) that are under hormonal suppression to inhibit any further activity of the shoot apical meristem -- SAM (paradormancy). The basic unit of a shoot is the phytomer which is composed of a node, a leaf, the axillary bud and an internode (see bottom right). Indeterminate growing species continue to produce new phytomers directly (C) or through one (D) to several (E) intermediate bud stage(s). Finally, most species set their terminal buds (F) and enter full dormancy (endodormancy).} 
+							%	\label{fig:fig_2xxx}
+							%	\end{figure}
 								
 								
 	\section*{Evolutionary trade-offs: the cost of certainty and flexibility}
@@ -251,13 +266,13 @@ In contrast, the flexible growth schedule of indeterminately growing species may
 We argue that new opportunities and challenges for trees with climate change will increasingly disrupt their phenological cycles, favoring species and genotypes that are more plastic in rearranging their activities by resuming growth and/or storage restoration (e.g., starch, nutrients) later in the year, thereby recovering from and compensating for some stress-induced damages and losses. Future climate will therefore likely intensify the competition among co-occurring species and might re-assemble forest communities increasingly composed of species adopting an indeterminate growth strategy.
 	
 	
-								\begin{figure}
-								\centering
-								\includegraphics[width=0.9\textwidth]{Fig_3_V4.pdf} 
-								\caption{Hypothesized predictions of growth rates under current (upper panels) and future (lower panels) climate for determinate and indeterminate growing species. Note that the indeterminate strategy is more exposed to the risk of frost and drought events while the determinate strategy condenses most growth within a safe period. In the current climate the indeterminate strategy is in balance with benefiting from the full climatic growing season in some years with some drawbacks in other years, resulting in the same mean yearly biomass increment, but with a higher variation; right box). In a future climate the indeterminate strategy might benefit from longer growing seasons, resulting in an overall higher mean annual biomass increment compared to determinate growers, but this will be dependent on the severity of drought that overlaps the potential growth period of determinate species. Triangle outlines represent the activity window for a current (black) versus a future (red) climate.}
-								\label{fig:fig_4xxx}
-							\end{figure}
-	\pagebreak
+							%	\begin{figure}
+							%	\centering
+							%	\includegraphics[width=0.9\textwidth]{Fig_3_V4.pdf} 
+							%	\caption{Hypothesized predictions of growth rates under current (upper panels) and future (lower panels) climate for determinate and indeterminate growing species. Note that the indeterminate strategy is more exposed to the risk of frost and drought events while the determinate strategy condenses most growth within a safe period. In the current climate the indeterminate strategy is in balance with benefiting from the full climatic growing season in some years with some drawbacks in other years, resulting in the same mean yearly biomass increment, but with a higher variation; right box). In a future climate the indeterminate strategy might benefit from longer growing seasons, resulting in an overall higher mean annual biomass increment compared to determinate growers, but this will be dependent on the severity of drought that overlaps the potential growth period of determinate species. Triangle outlines represent the activity window for a current (black) versus a future (red) climate.}
+							%	\label{fig:fig_4xxx}
+						%	\end{figure}
+	%\pagebreak
 	
 	\subsection*{(In)determinacy beyond leaf tissue} 
 	Although (in)determinate growth is typically discussed in the context of the shoot apical meristem, similar patterns may exist in secondary growth and below-ground meristems. For example, in the vascular cambium, a timely transition from earlywood to latewood production---and from vegetative growth to reproductive or storage allocation---may reflect an internal growth schedule similar to that of primary shoot growth. Cambial initial cells divide to form daughter cells, which subsequently produce cohorts of precursors that then mature into functional xylem and phloem \citep{valdovinos-ayalaSeasonalPatternsIncreases2022}. Hence the number of initial cell divisions largely determines the amount of total xylem formed over the season \citep{lupiXylemPhenologyWood2010}. Interestingly, several studies report that the production of new xylem cells (via cambial division) ceases even though environmental conditions remain favorable and the canopy is still photosynthetically active—suggesting that internal controls may limit secondary growth regardless of external potential \citep{buttoComparingCellDynamics2020, arendStemGrowthPhenology2024}.\\
@@ -290,7 +305,7 @@ We argue that new opportunities and challenges for trees with climate change wil
 
 			\textbf{Ratio of preformed to neoformed organs:} 
 			The ratio of the number of leaves (or leaf scars) at the end of the season to the number of leaf primordia initially formed in buds provides a direct measure of (in)determinacy. Values greater than one indicate a higher degree of indeterminate growth. First described over a century ago \citep{mooreStudyWinterBuds1909}, this metric has been used in only a few studies \citep{damascosBudCompositionBranching2005, kikuzawaLeafSurvivalWoody1983, guedonRelativeExtentsPreformation2006}. Although quite distinct and easily counted in some species (e.g. maples; \citealt{critchfieldShootGrowthHeterophylly1971}), there are only slight morphological differences between neoformed and preformed leaves in others (e.g., black cottonwood). Time-lapse imaging, labeling or artificial wounding can facilitate the distinction between preformed and neoformed organs. The number of leaf primordia can be determined through bud dissection, but this precludes the counting of neoformed leaves that would later arise from the same meristem. Micro-CT imaging may offer a modern, non-destructive alternative to bud dissection \citep{kovaleskiXrayPhaseContrast2019}.\\
-			
+
 			 \textbf{Seasonal growth patterns:} Temporal tracking of shoot elongation and wood formation—via micro-coring, dendrometers, or regular shoot measurements—reveals when and how new tissue is produced. Wood anatomical analyses distinguish cell formation from later development, especially useful in combination with artificial wounding of the cambium that acts as a `marker in time’ (pinning technique; \citealt{gartnerCambialActivityMoringa2021a}). High-resolution LiDAR and photogrammetry are increasingly capable of capturing shoot elongation and structural changes across whole crowns or stands \citep{zhangForestsGrowthMonitoring2019, jinEstimationLarchGrowth2022}.\\
 			
 			\textbf{Seasonal trends in canopy greenness:} Satellite and drone imagery can track vegetation green-up and senescence at large spatial scales. For example, \citet{mengConsistentTimeAllocation2024} found that time allocation between green-up and senescence remained consistent across temperate ecosystems, despite substantial variation in growing season length and warming intensity. Such temporal dynamics of green coloration may provide indirect insights into determinacy as it reflects how primary growth is distributed across the season --- more extended or bimodal green coloration patterns may indicate indeterminate growth. However, green coloration is a crude proxy and may confound photosynthetic activity with actual organogenesis or elongation, so its interpretation as a (in)determinacy measure should be treated with caution.\\
@@ -300,12 +315,12 @@ We argue that new opportunities and challenges for trees with climate change wil
 	\end{tcolorbox}
 	
 	
-						\begin{figure}
-		\centering
-		\includegraphics[width=0.9\textwidth]{phylo.pdf} 
-		\caption{Phylogenetic tree of plant species colored by growth determinacy trait values, visually representing the evolutionary distribution of growth strategies across taxa. This tree includes species for which shoot growth determinacy data were compiled (mainly from \citet{halleTropicalTreesForests1978} and \citet{kikuzawaLeafSurvivalWoody1983}), with the phylogeny pruned from the comprehensive seed plant tree of \citet{smithConstructingBroadlyInclusive2018a} to match the trait dataset. Growth determinacy was scored as indeterminate (blue), intermediate (yellow) and determinate (red), and mean values were calculated per species when multiple entries existed. These values were then mapped as a continuous trait onto the phylogeny using the contMap() function from the phytools R package.}
-		\label{fig:phylo}
-	\end{figure}
+					%	\begin{figure}
+	%	\centering
+	%	\includegraphics[width=0.9\textwidth]{phylo.pdf} 
+	%	\caption{Phylogenetic tree of plant species colored by growth determinacy trait values, visually representing the evolutionary distribution of growth strategies across taxa. This tree includes species for which shoot growth determinacy data were compiled (mainly from \citet{halleTropicalTreesForests1978} and \citet{kikuzawaLeafSurvivalWoody1983}), with the phylogeny pruned from the comprehensive seed plant tree of \citet{smithConstructingBroadlyInclusive2018a} to match the trait dataset. Growth determinacy was scored as indeterminate (blue), intermediate (yellow) and determinate (red), with mean values calculated per species when multiple entries existed. These values were then mapped as a continuous trait onto the phylogeny using the contMap() function from the phytools R package.}
+	%	\label{fig:phylo}
+%	\end{figure}
 	\pagebreak
 	
 \section*{Future directions}

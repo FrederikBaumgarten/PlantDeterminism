@@ -108,11 +108,29 @@ study <- contMap(tree, x, plot = T)
 slopeCol <- setMap(study, colors=c("blue","yellow","red"))
 h<-max(nodeHeights(slopeCol$tree))
 
-pdf("./output/phyloIntColor.pdf", height = 20, width = 7)
-plot(slopeCol,legend = F, lwd=3, ylim=c(1-0.09*(Ntip(slopeCol$tree)),Ntip(slopeCol$tree)))
+pdf("./output/phyloIntColor.pdf", height = 13, width = 10)
+plot(slopeCol,legend = T, lwd=3, ylim=c(1-0.09*(Ntip(slopeCol$tree)),Ntip(slopeCol$tree)))
 
 dev.off()
 
+pdf("./output/phyloIntColor.pdf", height = 10.5, width = 8.3)
 
+# Plot without the legend
+#plot(slopeCol, legend = FALSE, lwd = 3, ylim = c(1 - 0.09 * Ntip(slopeCol$tree), Ntip(slopeCol$tree)))
+plot(slopeCol, legend = FALSE, lwd = 3, ylim = c(0, Ntip(slopeCol$tree)))
 
+# Add the color legend to the right
+add.color.bar(
+  150,                          # Length of the color bar (you can adjust this)
+  slopeCol$cols,              # Colors used
+  title = "Trait value",      # Legend title (adjust to your variable)
+  lims = slopeCol$lims,       # Value limits
+  digits = 2,                 # Number of digits to show
+  prompt = FALSE,
+  x = 10, y = 0,              # Position – tweak y value as needed
+  subtitle = "",              # Optional subtitle
+  lwd = 3,                    # Match the tree line width
+  fsize = 1                   # Font size for legend text
+)
+dev.off()
 
