@@ -1,13 +1,42 @@
-# Started Nov 27, 2023 by Deirdre L.
-# Aim of this code is to get a phylogeny for all of the spp we have germination data scraped
-
-if(length(grep("deirdreloughnan", getwd()) > 0)) {
-  setwd("~/Documents/github/egret")
-} else if(length(grep("Lizzie", getwd()) > 0)) {
-  setwd("~/Documents/git/projects/others/deirdre/egret")
-} else if(length(grep("frederik", getwd())) > 0){
-  setwd("/Users/frederik/github/PlantDeterminism/analyses")
-}
+# =============================================================================
+# Phylogeny of tree-species growth determinacy
+# -----------------------------------------------------------------------------
+# Generates a phylogeny of the study species with the determinacy trait
+# (indeterminate / intermediate / determinate) mapped onto the tree, and
+# writes the pruned tree and the figure (phyloIntColor.pdf).
+#
+# Associated publication:
+#   Baumgarten et al. (2026). (In)determinacy in woody plants: limits and opportunities for timing growth in a changing climate. Ecology Letters. [DOI]
+#
+# Data/code author: Frederik Martin Baumgarten
+#   ORCID 0000-0002-8284-8384
+#   University of Basel, Department of Environmental Sciences
+#   frederik.baumgarten@unibas.ch
+# 
+# Reproducibility notes:
+#   * Paths are RELATIVE to this script's location, so it runs without editing
+#     as long as all files are in the same folder (see "Required files" below).
+#   * Please run in a CLEAN R session. This script does NOT call
+#     rm(list = ls()); just start a fresh session before sourcing it.
+#   * R and package versions used in the original analysis are listed in
+#     read_me.txt.
+#
+# Required files in the SAME folder as this script:
+#   Determinism_data.csv   - species / determinacy data (included in this archive)
+#   ALLMB.tre              - Smith & Brown (2018) seed-plant megatree.
+#                            NOT included here (large file, separate licence).
+#                            Download "ALLMB.tre v1.0" from
+#                            https://doi.org/10.6084/m9.figshare.9747638
+#                            and place it next to this script.
+#                            Cite: Smith, S.A. & Brown, J.W. (2018) Constructing
+#                            a broadly inclusive seed plant phylogeny. American
+#                            Journal of Botany 105, 302-314.
+#
+# Outputs (written to the same folder):
+#   determinacyPhylogeny.tre
+#   phyloIntColor.pdf
+# =============================================================================
+options(stringsAsFactors = FALSE)  # read words as characters, not factors
 
 #library(tidyverse)
 library(stringr)
@@ -17,14 +46,10 @@ library(geiger)
 library(pez)
 library(caper)
 library(phangorn)
-library(readxl)
-
-rm(list = ls()) # Clear whatever is already in R's memory
-options(stringsAsFactors=FALSE)# Make sure words are read in as characters rather than factors
 
 # read in the data
 
-det <- read_excel("input/Determinism.xlsx")
+det <- read.csv("Determinism_data.csv")
 det$sp.name <- paste(det$genus, det$species, sep = "_")
 
 ### combine with trait of determinacy
@@ -62,7 +87,7 @@ genus.list=sort(unique(df_trait$genus))
 
 
 ## load phylo (from Smith and Brown 2019)
-phy.plants<-read.tree("./input/ALLMB.tre")
+phy.plants<-read.tree("ALLMB.tre")
 
 ## getting a list of genera in S&B's phylo
 phy.genera<-unlist(
@@ -85,7 +110,7 @@ sort(tree$tip.label)
 #basic plotting
 plot(tree, type="fan")
 
-write.tree(tree,"./output/determinacyPhylogeny.tre")
+write.tree(tree,"determinacyPhylogeny.tre")
 
 
 
@@ -108,12 +133,12 @@ study <- contMap(tree, x, plot = T)
 slopeCol <- setMap(study, colors=c("blue","yellow","red"))
 h<-max(nodeHeights(slopeCol$tree))
 
-pdf("./output/phyloIntColor.pdf", height = 13, width = 10)
+pdf("phyloIntColor.pdf", height = 13, width = 10)
 plot(slopeCol,legend = T, lwd=3, ylim=c(1-0.09*(Ntip(slopeCol$tree)),Ntip(slopeCol$tree)))
 
 dev.off()
 
-pdf("./output/phyloIntColor.pdf", height = 10.5, width = 8.3)
+pdf("phyloIntColor.pdf", height = 10.5, width = 8.3)
 
 # Plot without the legend
 #plot(slopeCol, legend = FALSE, lwd = 3, ylim = c(1 - 0.09 * Ntip(slopeCol$tree), Ntip(slopeCol$tree)))
@@ -133,4 +158,3 @@ add.color.bar(
   fsize = 1                   # Font size for legend text
 )
 dev.off()
-
